@@ -8,39 +8,43 @@
     <link href="./css/signup.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>SWM</h1>
-    </header>
-    <main>
-        <form method="post">
-            <table>
-                <tr>
-                    <th>아이디</th>
-                    <td><input type="text" class="input-css" name="id" id="id"></td>
-                </tr>
-                <tr>
-                    <th>비밀번호</th>
-                    <td><input type="password" class="input-css" name="pw" id="pw"></td>
-                </tr>
-                <tr>
-                    <th>비밀번호 확인</th>
-                    <td><input type="password" class="input-css" name="pw2" id="pw2"></td>
-                </tr>
-                <tr>
-                    <th>이름</th>
-                    <td><input type="text" class="input-css" name="name" id="name"></td>
-                </tr>
-                <tr>
-                    <th>전화번호</th>
-                    <td><input type="text" class="input-css" name="phone" id="phone"></td>
-                </tr>
-                <tr id="table_button">
-                    <th colspan="2">
-                        <input type="submit" value="회원가입" class="btn btn-primary btn-jittery">
-                    </th>
-                </tr>
-            </table>
-        </form>
-    </main>
+        <header>
+            <h1>SWM</h1>
+        </header>
+        <main>
+            <form method="post">
+                <div id="main_radio">
+                    <P>*어떤 목적으로 가입하시나요?</P>
+                        <label><input type="radio" name="main_SP" id="store" value="store">
+                        <span>매점용</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="main_SP" id="private" value="private" checked>
+                        <span>개인용</span></label>
+                </div>
+                <table>
+                    <tr>
+                        <th>아이디</th>
+                        <td><input type="text" class="input-css" name="id" id="id" placeholder="아이디 입력"></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td><input type="password" class="input-css" name="pw" id="pw" placeholder="비밀번호 입력"><br>
+                        <input type="password" class="input-css" name="pw2" id="pw2" placeholder="비밀번호 다시 입력"></td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text" class="input-css" name="name" id="name" placeholder="이름 입력"></td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td><input type="text" class="input-css" name="phone" id="phone" placeholder="연락처 입력"></td>
+                    </tr>
+                    <tr id="table_button">
+                        <th colspan="2">
+                            <input type="submit" value="회원가입" class="btn btn-primary btn-jittery">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </main>
 </body>
 </html>

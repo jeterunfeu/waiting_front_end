@@ -4,7 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
-header, th {
+header, th, #main_radio {
     font-family: 'ONE-Mobile-POP';
 }
 body {
@@ -17,7 +17,7 @@ header {
 h1{
     font-size: 50px;
     color: #FF4B5C;
-    margin-top: 80px;
+    margin-top: 60px;
     letter-spacing: 10px;
     text-shadow: 2px 2px #66BFBF;
     text-decoration: overline;
@@ -31,13 +31,16 @@ main {
 }
 table {
     border-collapse: collapse;
-    width: 250px; height: 400px;
-    margin: auto;
+    width: 290px; height: 340px;
+    margin: auto; margin-top: 10px;
     text-align: left;
 }
 th {
     color: #056674;
     padding: 10px;
+}
+td {
+    padding-left: 50px;
 }
 .input-css{
     border-radius: 10px;
@@ -83,3 +86,43 @@ th {
     35% {transform: scale(1.15) rotate(2deg);}
     40% {transform: scale(1.15) rotate(0);}
   }
+p {
+    margin-bottom: 20px;
+}
+#main_radio{
+    margin: auto;
+    width: 350px; height: 100px;
+    text-align: center; color: #056674;
+    border: 5px solid #66BFBF; border-radius: 50px; border-style: inset;
+}
+span {
+    vertical-align: middle;
+    color: #FF4B5C;
+}
+label {
+    font-size: 20px;
+    line-height: 2rem;
+    padding: 0.2em 0.4em;
+  }
+[type="radio"] {
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    transition: border 0.5s ease-in-out;
+    
+}
+[type="radio"]:checked {
+    border: 0.4em solid #FF4B5C;
+}
+[type="radio"]:focus-visible {
+    outline-offset: max(2px, 0.1em);
+    outline: max(2px, 0.1em) dotted #FF4B5C;
+}
+[type="radio"]:hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+    cursor: pointer;
+}
+
