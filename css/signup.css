@@ -1,21 +1,85 @@
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header, th {
+    font-family: 'ONE-Mobile-POP';
+}
+body {
+    background-color: #E0ECE4;
+}
 header {
-    background-color: aquamarine;
-    height: 70px;
-    text-align: center;
-    margin-top: 80px;
+    width: 340px; height: 70px;
+    text-align: center; margin: auto;
 }
 h1{
     font-size: 50px;
+    color: #FF4B5C;
+    margin-top: 80px;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px #66BFBF;
+    text-decoration: overline;
 }
 main {
-    background-color: antiquewhite;
     min-height: 350px;
     margin-top: 30px;
 }
+#table_button {
+    text-align: center;
+}
 table {
     border-collapse: collapse;
-    border: 1px solid black;
-    width: 340px; height: 300px;
+    width: 250px; height: 400px;
     margin: auto;
-    text-align: right;
+    text-align: left;
 }
+th {
+    color: #056674;
+    padding: 10px;
+}
+.input-css{
+    border-radius: 10px;
+    width: 130px;
+}
+.btn-jittery {
+    -webkit-animation: jittery 4s infinite;
+            animation: jittery 4s infinite;
+            position: relative;
+            border: none;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 15px;
+            font-family: 'ONE-Mobile-POP';
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+            background: #FF4B5C;
+            color: white;
+}
+.btn-jittery:hover{
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+@-webkit-keyframes jittery {
+    5%, 50% {transform: scale(1);}
+    10% {transform: scale(0.9);}
+    15% {transform: scale(1.15);}
+    20% {transform: scale(1.15) rotate(-5deg);}
+    25% {transform: scale(1.15) rotate(5deg);}
+    30% {transform: scale(1.15) rotate(-3deg);}
+    35% {transform: scale(1.15) rotate(2deg);}
+    40% {transform: scale(1.15) rotate(0);}
+  }
+@keyframes jittery {
+    5%, 50% {transform: scale(1);}
+    10% {transform: scale(0.9);}
+    15% {transform: scale(1.15);}
+    20% {transform: scale(1.15) rotate(-5deg);}
+    25% {transform: scale(1.15) rotate(5deg);}
+    30% {transform: scale(1.15) rotate(-3deg);}
+    35% {transform: scale(1.15) rotate(2deg);}
+    40% {transform: scale(1.15) rotate(0);}
+  }
