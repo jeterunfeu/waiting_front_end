@@ -1,12 +1,68 @@
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {font-family: 'ONE-Mobile-POP';}
+body {background-color: #E0ECE4;} 
 header {
-    background-color: aquamarine;
-    height: 70px;
-    text-align: center;
+    width: 340px; height: 70px;
+    text-align: left; margin: auto;
 }
 main {
-    background-color: antiquewhite;
-    min-height: 700px;
+    min-height: 350px;
+    margin-top: 10px;
 }
-footer {
-    background-color: burlywood;
+h1{
+    font-size: 30px;
+    color: #FF4B5C;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px #66BFBF;
+    text-decoration: overline;
+}
+input:-ms-input-placeholder {color: #66BFBF;}
+input::-webkit-input-placeholder {color: #66BFBF;}
+input::-moz-placeholder {color: #66BFBF;}
+#serach_div {
+    margin: auto;
+    width: 350px; height: 40px;
+    border: 1px solid #056674;
+    background: white;
+}
+[type="text"]{
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    float: left;
+    width: 265px;
+    border: 0;
+    outline: none;
+}
+button {
+    border: 0;
+    float: right;
+    height: 100%; width: 60px;
+    background: #056674;
+    color: white;
+}
+a {text-decoration: none; color: #FF4B5C;}
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+aside {
+    padding: 10px; background: #66BFBF;
+    width: 340px;
+    position: fixed; left: 50%; transform: translateX( -50% );
+    bottom: 0px;
+    z-index: 9999;
+}
+#menu {
+    width: 300px;
+    margin: auto;
 }
